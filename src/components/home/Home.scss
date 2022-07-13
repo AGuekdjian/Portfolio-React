@@ -1,0 +1,89 @@
+@import "../../../node_modules/bootstrap/scss/bootstrap.scss";
+
+//   START STYLES HOME 
+
+.banner {
+    color: #d0d3d4;
+    padding-bottom: 37px;
+    margin-top: 58px;
+    background: url('../../../public/Image/abstract.jpg') no-repeat;
+    background-size: cover;
+
+    #title {
+        font-size: 33px;
+    }
+    
+    #title-banner {
+        text-align: center;
+        margin-top: 110px;
+        margin-left: 55px;
+        margin-right: 55px;
+        color: hsl(0, 0%, 48%);
+        font-size: 46px;
+        font-weight: bold;
+        font-family: monospace;
+        letter-spacing: 3px;
+        cursor: pointer;
+
+        span {
+            transition: 0.5s ease-out;
+        }
+
+        &:hover span:nth-child(1) {
+            margin-right: 5px;
+        }
+
+        &:hover span:nth-child(2) {
+            margin-left: 30px;
+        }
+
+        &:hover span {
+            color: #fff;
+            text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff;
+        }
+    } 
+    
+    .btn-contact-me {
+        background: rgba(10, 102, 194, .4);
+        border: 2px solid #0a66c2;
+        color: #fff;
+        letter-spacing: 1px;
+        transition: .3s;
+    }
+    
+    .btn-contact-me {
+        color: #d0d3d4;
+        font-weight: bolder;
+
+        &:hover {
+            color: rgba(0, 0, 0, .8);
+        }
+    }
+    
+    .author-img {
+        position: relative;
+        z-index: 1;
+
+        &::before {
+            position: absolute;
+            content: '';
+            left: -20px;
+            top: 20px;
+            width: 100%;
+            height: 100%;
+            border: 5px solid $primary;
+            z-index: -1;
+        }
+    }
+    
+    .img-content {
+        transition: .5s;
+        border-radius: 96px;
+
+        img {
+            border-radius: 17%;
+        }
+    }
+}
+
+//   END STYLES HOME
