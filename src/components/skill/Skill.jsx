@@ -40,7 +40,7 @@ export default function Skill() {
                     </div>
 
                     <div class="card bg-dark">
-                        <img src={React_icon} width="135" height="120" id="react" alt="Logo de HTML" />
+                        <img src={React_icon} width="135" height="120" id="react" alt="Logo de HTML" className="App-logo"/>
                         <p>React.js</p>
                     </div>
                 </div>

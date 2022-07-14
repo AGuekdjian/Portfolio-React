@@ -1,0 +1,60 @@
+@import "../../../node_modules/bootstrap/scss/bootstrap.scss";
+
+// VARIABLES
+$light-grey: #d0d3d4;
+$blue-opacity: rgba(10, 102, 194, .4);
+$sky-blue-dark: rgba(0,97,255,1);
+$green-fluor: rgba(14,157,49,1);
+$pink-fluor: rgba(233,0,255,1);
+$turquesa: rgba(0,243,255,1);
+
+
+.btn-contact-me {
+    background: $blue-opacity !important;
+    border: 2px solid $sky-blue-dark !important;
+    letter-spacing: 1px;
+    transition: .3s;
+    color: $light-grey !important;
+    font-weight: bolder;
+
+    &:hover {
+        color: rgba(0, 0, 0, .8) !important;
+        background: $sky-blue-dark !important;
+    }
+}
+
+.modal-content {
+    background: rgb(14,157,49);
+    background: -moz-linear-gradient(162deg, $green-fluor 0%, $sky-blue-dark 100%);
+    background: -webkit-linear-gradient(162deg, $green-fluor 0%, $sky-blue-dark 100%);
+    background: linear-gradient(162deg, $green-fluor 0%, $sky-blue-dark 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0e9d31",endColorstr="#0061ff",GradientType=1);
+
+    .form-nav-bar {
+
+        h5 {
+            margin-left: 145px;
+        }
+    }
+
+    .f-input-d-light {
+        background-color: #333333;
+        resize: none;
+        border: none;
+        color: $light-grey;
+        
+        &:focus {
+            color: $light-grey;
+            border: 1px solid $pink-fluor;
+            border-image: linear-gradient(132deg, $pink-fluor 0%, $turquesa 100%)1;
+        }
+    }
+
+    .lab-tag {
+        margin-left: 15px;
+        font-weight: bold;
+        color: $light-grey;
+        display: flex;
+        width: 100%;
+    }
+}
